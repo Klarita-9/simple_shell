@@ -19,7 +19,7 @@ int _erratoi(char *s)
 		{
 			result *= 10;
 			result += (s[i] - '0');
-			if (result > INIT_MAX)
+			if (result > INT_MAX)
 				return (-1);
 		}
 		else
