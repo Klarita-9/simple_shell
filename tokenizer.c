@@ -44,7 +44,7 @@ char **strtow(char *str, char *d)
 			s[j][m] = str[i++];
 		s[j][m] = 0;
 	}
-	s[j] NULL;
+	s[j] = NULL;
 	return (s);
 }
 
@@ -60,7 +60,7 @@ char **strtow2(char *str, char d)
 	char **s;
 
 	if (str == NULL || str[0] == 0)
-		return (NLL);
+		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
 		if ((str[i] != d && str[i + 1] == d) ||
 		     (str[i] != d && !str[i + 1]) || str[i + 1] == d)
